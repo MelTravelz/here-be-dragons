@@ -15,13 +15,14 @@ class Nytimes
       expect(result).to eq("OK")
     end
 
-    xit 'can get copyright' do 
+    it 'can get copyright' do 
       #Using @hash, define a variable called `result` that returns the copyright
+      result = @hash[:copyright]
 
       expect(result).to eq("Copyright (c) 2018 The New York Times Company. All Rights Reserved.")
     end
 
-    xit 'can get array of stories' do 
+    it 'can get array of stories' do 
       #Using @hash, define a variable called `result` that returns the array of stories
   
       expect(result).to be_an_instance_of(Array)
